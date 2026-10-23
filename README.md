@@ -6,7 +6,6 @@ Built for CIT331 Web Technologies, Lab 4.
 https://github.com/8ilalahmad56/cit331-lab4-campus-cafe.git
 # Live site
 https://cit331-lab4-campus-cafe-xi.vercel.app/
- 
 ## Pages
 - Home (index.html)
 - Menu (menu.html)
