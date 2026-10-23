@@ -68,10 +68,19 @@ h1 + p {
  
 /* ---------- 4. Header and navigation ---------- */
 .site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: var(--brand-dark);
   color: #fff;
   padding: 12px 24px;
 }
+
 .brand {
   color: #fff;
   text-decoration: none;
@@ -253,18 +262,9 @@ input[placeholder]:not(:placeholder-shown):invalid {
   font-weight: 600;
   color: #0a6b50;
 }
-/* ---------- TEMPORARY: specificity experiment (delete in Step 4.9) ---------- */
-#main p {
-  color: red;
-}
+
 /* ---------- 10. Positioning ---------- */
  
-/* sticky: stays at the top while the page scrolls */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
  
 /* absolute: placed inside its nearest positioned parent */
 .menu-item { position: relative; }
@@ -315,13 +315,7 @@ input[placeholder]:not(:placeholder-shown):invalid {
   border-radius: 8px;
 }
 /* ---------- 11. Flexbox: header, nav, footer ---------- */
-.site-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
+
 .brand {
   display: flex;
   align-items: center;
